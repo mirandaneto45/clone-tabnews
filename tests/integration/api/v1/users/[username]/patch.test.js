@@ -277,7 +277,6 @@ describe("PATCH /api/v1/users/[username]", () => {
         "newPassword1",
         userInDatabase.password,
       );
-      console.log(userInDatabase.password);
       expect(correctPasswordMatch).toBe(true);
 
       expect(incorrectPasswordMatch).toBe(false);
