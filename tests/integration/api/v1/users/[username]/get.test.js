@@ -85,7 +85,7 @@ describe("GET /api/v1/users/[username]", () => {
 
     test("With nonexistent username", async () => {
       const response = await fetch(
-        "http://localhost:3000/api/v1/users/usuarioinexistente",
+        "http://localhost:3000/api/v1/users/UsuarioInexistente",
       );
 
       expect(response.status).toBe(404);
